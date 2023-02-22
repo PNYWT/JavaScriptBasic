@@ -8,7 +8,7 @@ for (let i = 0; i < msgClass.length; i++){
     msgClass[i].innerHTML = "msgClass - Hello JS" + Number(i+1)
 }
 
-//คล้ายกับ For loop ของ getElementsByClassName ต่างกันตรงที่ใช้ css selector
+//คล้ายกับ For loop ของ getElementsByClassName ต่างกันตรงที่ใช้ css selector 
 let msgQuerySelectorAll = document.querySelectorAll(".message");
 msgQuerySelectorAll.forEach((msgQuery) => {
     msgQuerySelectorAll.innerHTML = "Hello SelectorAll";
@@ -17,3 +17,21 @@ msgQuerySelectorAll.forEach((msgQuery) => {
 //เลือกจาก id คล้ายกับ getElementById ต่างกันตรงที่ใช้ Css selector
 let msgQuerySelector = document.querySelector("#message3");
 msgQuerySelector.innerHTML =  "Hello Selector";
+msgQuerySelector.style.color = "red";
+msgQuerySelector.style.backgroundColor = "blue";
+msgQuerySelector.style.fontSize = "20px";
+
+//สรุป ถ้าจะใช้ Css selector
+//เลือกจาก ID ใช้ #name
+//เลือกจาก class ใช้ .name
+
+let msgHelloSDK = document.querySelector(".messageBtn");
+let helloSDKBtn = document.querySelector(".helloSDK-button");
+
+helloSDKBtn.addEventListener("click", () =>{
+    if (msgHelloSDK.style.display == "none"){
+        msgHelloSDK.style.display = "block";
+    }else{
+        msgHelloSDK.style.display = "none";
+    }
+})
