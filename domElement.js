@@ -1,3 +1,4 @@
+//MARK: DOM Element
 // ชื่อ ID ใช้ได้แค่  1 tag ต่อ 1 ชื่อ
 let msg2 = document.getElementById("message2");
 msg2.innerHTML = "msg2 - Hello JS"
@@ -25,6 +26,7 @@ msgQuerySelector.style.fontSize = "20px";
 //เลือกจาก ID ใช้ #name
 //เลือกจาก class ใช้ .name
 
+//MARK: DOM Style
 let msgHelloSDK = document.querySelector(".messageBtn");
 let helloSDKBtn = document.querySelector(".helloSDK-button");
 
@@ -34,4 +36,18 @@ helloSDKBtn.addEventListener("click", () =>{
     }else{
         msgHelloSDK.style.display = "none";
     }
+})
+
+//MARK: Dom Class
+let msgDomClass = document.querySelector(".msg_DomClass");
+// msgDomClass.classList.add("Yellowgreen-box");
+// msgDomClass.classList.remove("Yellowgreen-box");
+// msgDomClass.classList.add("Royalblue-box");
+// msgDomClass.classList.replace('Yellowgreen-box', 'Royalblue-box');
+
+let body = document.body;
+let themeBtn = document.querySelector(".theme-button");
+themeBtn.addEventListener("Click", () =>{
+    //Change theme
+    body.classList.toggle("dark-theme");
 })

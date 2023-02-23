@@ -1,0 +1,30 @@
+.msg_DomClass{ /* <- msg_DomClass อยู่ใน HTML*/
+    background-color: grey;
+    border: 2px solid black;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.msg_DomClass.Yellowgreen-box{ /* <- msg_DomClass อยู่ใน HTML เป็น Class ว่าง จะถูกสร้างก็ต่อเมื่อระบุใน JS classList.add*/
+    background-color: yellowgreen;
+}
+
+.msg_DomClass.Royalblue-box{
+    background-color: rebeccapurple;
+}
+
+.dark-theme{
+    color: white;
+    background-color: #1a1a1a;
+}
+
+.dark-theme .msg_DomClass{
+    color: white;
+    background-color: #333333;
+    border-color: gold;
+}
+
+.theme-button{
+    font-size: 18px;
+    padding: 10px;
+}
